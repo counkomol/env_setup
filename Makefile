@@ -1,3 +1,3 @@
-get :
-	cp ~/.emacs .
-	cp ~/.bashrc .
+put :
+	cp -i init.el ~/.emacs.d
+

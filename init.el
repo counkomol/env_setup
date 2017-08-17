@@ -18,8 +18,12 @@
 
 
 ;; Packages
-(require 'package)
+;; elpy, markdown-mode
+;; (require 'package)
 ;; (add-to-list 'package-archives
 ;; 	     '("elpy" . "http://jorgenschaefer.github.io/packages/"))
+;; (require 'package)  
+;; (add-to-list 'package-archives  
+;; 	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
 (package-initialize)
 (elpy-enable)
