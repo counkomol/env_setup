@@ -17,6 +17,13 @@
  '(("." . "~/.emacs.d/backups"))
  )
 
+;; Highlight lines with over 80 columns
+;; Credit: https://emacs.stackexchange.com/a/14066
+(setq
+ whitespace-line-column 79
+ whitespace-style `(face lines-tail)
+ )
+(add-hook `prog-mode-hook `whitespace-mode)
 
 ;; Packages
 ;; elpy, markdown-mode
