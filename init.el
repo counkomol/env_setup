@@ -17,6 +17,11 @@
  '(("." . "~/.emacs.d/backups"))
  )
 
+;; display shell in the current window
+;; Credit: https://superuser.com/a/1399369
+(add-to-list 'display-buffer-alist
+             '("^\\*shell\\*$" . (display-buffer-same-window)))
+
 ;; Highlight lines with over 80 columns
 ;; Credit: https://emacs.stackexchange.com/a/14066
 (setq
